@@ -1,0 +1,22 @@
+.kieu-ngao-playing .wood-title{display:none}
+.kieu-ngao-hud .archer-stage-objective{left:50%;right:auto;top:16px;transform:translateX(-50%);width:360px;background:linear-gradient(145deg,#1b211cf2,#101916f2);border-color:#968567}
+.kieu-ngao-hud .archer-stage-objective>small{letter-spacing:1.3px}
+.kieu-story{background:linear-gradient(140deg,#232a21fc,#101b17fc);border-color:#a39874;width:min(680px,calc(100vw - 28px))}
+.kieu-story h1{font-size:40px;text-wrap:balance}.kieu-story h2{font:21px/1.3 Georgia,serif;color:#bfcaac;margin:-6px 0 18px}
+.kieu-story p{font-size:16px;line-height:1.65}.kieu-story blockquote{border-left:2px solid #b9a57a;margin:18px 0;padding:8px 18px;color:#e4d8b8;font:italic 18px/1.6 Georgia,serif}
+.kieu-speaker{font-size:12px;color:#ceb686;letter-spacing:1px}.kieu-lines p{margin:12px 0}.kieu-story .archer-stage-actions{margin-top:22px}
+.kieu-interaction{pointer-events:auto;position:absolute;bottom:144px;left:50%;transform:translateX(-50%);max-width:calc(100vw - 28px);text-align:center;color:#f0e4c5}
+.kieu-interaction[hidden]{display:none}.kieu-interaction p{margin:0 0 8px;background:#101914df;padding:6px 12px;border-radius:5px;font:13px/1.4 'Segoe UI',sans-serif}
+.kieu-interaction p:empty{display:none}
+.kieu-interaction button,.kieu-sound{border:1px solid #a49978;border-radius:7px;background:#1c3024f2;color:#f1e7cd;min-height:44px;padding:9px 18px;cursor:pointer;font:14px/1.4 'Segoe UI',sans-serif}
+.kieu-interaction button:disabled{opacity:.65;cursor:default}.kieu-interaction button:focus-visible,.kieu-sound:focus-visible{outline:3px solid #eddba4;outline-offset:3px}
+.kieu-sound{pointer-events:auto;position:absolute;right:16px;bottom:16px;font-size:12px;padding:8px 12px}
+.kieu-ngao-playing[data-forest-phase=return] .wood-dock,.kieu-ngao-playing[data-forest-phase=return] .wood-target,.kieu-ngao-playing[data-forest-phase=return] .wood-instructions,.kieu-ngao-playing[data-forest-phase=return] .wood-trial,
+.kieu-ngao-playing[data-forest-phase=ending] .wood-dock,.kieu-ngao-playing[data-forest-phase=ending] .wood-target,.kieu-ngao-playing[data-forest-phase=ending] .wood-instructions,.kieu-ngao-playing[data-forest-phase=ending] .wood-trial{display:none}
+.kieu-ngao-playing[data-forest-phase=return] .kieu-interaction{bottom:24px}
+.kieu-ngao-playing .wood-trial{display:none}
+@media(max-width:600px){.kieu-story{padding:20px}.kieu-story h1{font-size:32px}.kieu-story p{font-size:14px}.kieu-story blockquote{font-size:16px}.kieu-sound{right:8px;bottom:6px}.kieu-ngao-hud .archer-stage-objective-hint{font-size:12px}.kieu-interaction{bottom:128px;width:calc(100vw - 24px)}}
+@media(max-width:1000px){.kieu-ngao-hud .archer-stage-objective{left:12px;top:130px;transform:none;width:300px}}
+@media(max-width:600px){.kieu-ngao-hud .archer-stage-objective{left:8px;top:110px;width:calc(100vw - 16px)}}
+@media(max-height:520px){.kieu-story{padding:16px 22px}.kieu-story h1{font-size:28px;margin:6px 0 10px}.kieu-story p{font-size:13px;line-height:1.5;margin:8px 0}.kieu-story blockquote{font-size:15px;margin:10px 0;padding:4px 12px}.kieu-story .archer-stage-actions{margin-top:12px}.kieu-interaction{bottom:116px}.kieu-interaction p{max-width:350px}.kieu-ngao-hud .archer-stage-objective{top:112px;width:280px}.kieu-ngao-hud .archer-stage-objective ol{display:none}}
+@media(prefers-reduced-motion:reduce){.kieu-story::backdrop{backdrop-filter:none}}

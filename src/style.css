@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #080d12;
+}
+
+#app {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+canvas {
+  display: block;
+}
+
+.asset-load-error { position: absolute; inset: 0; z-index: 12000; padding: max(24px, 8vh) max(20px, 8vw); overflow: auto; background: #091820; color: #f0f5f3; font: 16px/1.6 'Segoe UI', sans-serif; }
+.asset-load-error h1 { color: #e6ca83; font-size: 26px; }
+.asset-load-error button { min-height: 44px; margin: 12px 0; padding: 10px 20px; border: 1px solid #75def2; border-radius: 6px; background: #1c3b47; color: #f0f5f3; font: inherit; cursor: pointer; }
+.asset-load-error details { max-width: 720px; overflow-wrap: anywhere; }
+.asset-load-error summary { cursor: pointer; min-height: 44px; padding: 10px 0; }
+.asset-load-error :focus-visible { outline: 2px solid #75def2; outline-offset: 3px; }
+
+.dev-menu { position: fixed; top: 12px; right: 12px; z-index: 9999; font: 14px 'Segoe UI', sans-serif; color: #e6edf3; }
+.dev-menu summary { cursor: pointer; min-height: 44px; padding: 12px 18px; background: #172129; border: 1px solid #71858f; border-radius: 6px; }
+.dev-menu nav { display: grid; gap: 6px; margin-top: 6px; padding: 8px; width: min(260px, calc(100vw - 24px)); max-height: calc(100dvh - 80px); overflow-y: auto; background: #172129; border: 1px solid #71858f; border-radius: 6px; }
+.dev-menu a, .dev-menu button { display: block; min-height: 44px; padding: 12px; border: 1px solid #526675; border-radius: 4px; background: #223341; color: #e6edf3; font: inherit; text-align: left; text-decoration: none; cursor: pointer; }
+.dev-menu :focus-visible { outline: 2px solid #72e8ff; outline-offset: 2px; }
+.dev-menu pre { margin: 4px 0; padding: 8px; border-top: 1px solid #526675; font: 12px/1.6 'Segoe UI', sans-serif; white-space: pre-wrap; overflow-wrap: anywhere; }
+
+.lab-launch.sandbox-launch { top: 64px; min-height: 44px; }
+.lab-launch:focus-visible, .lab-return:focus-visible {
+  outline: 2px solid #72e8ff;
+  outline-offset: 3px;
+}
+
+/* Fit a 9:16 capture area inside the browser without stretching the canvas. */
+body.portrait-capture {
+  display: grid;
+  place-items: center;
+}
+
+.portrait-capture #app {
+  width: min(100vw, 56.25vh);
+  height: min(100vh, 177.77777778vw);
+}
+.game-install{position:absolute;right:8px;bottom:8px;display:flex;gap:8px;z-index:1500}.game-install button{min-height:44px;padding:8px 12px;border:1px solid #67d2ed;border-radius:8px;color:white;background:#082536;font:12px system-ui}.has-touch-controls .game-install{top:8px;bottom:auto;right:170px}.has-touch-controls:has(.touch-controls:not([hidden])) .game-install{display:none}@media(display-mode:fullscreen),(display-mode:standalone){.game-install{display:none}}
+@media(display-mode:fullscreen),(display-mode:standalone){.game-install{display:flex}.game-install button:nth-child(2),.game-install button:nth-child(3){display:none}}
+.khang-stage-playing .game-install{display:none!important}
+.offline-download{position:absolute;inset:0;z-index:20000;display:grid;place-items:center;padding:16px;background:#020c16e8;color:#edfaff;font:15px/1.5 system-ui;overflow:auto}.offline-download>div{width:min(440px,100%);max-height:90dvh;overflow:auto;padding:20px;border:1px solid #67d2ed;border-radius:16px;background:#082536}.offline-download h2{font-size:19px;margin:0 0 12px}.offline-download progress{width:100%;height:20px;accent-color:#48d2f5}.offline-download button{min-height:44px;width:100%;padding:10px;border:1px solid #67d2ed;border-radius:8px;background:#124665;color:white;font-size:15px}.offline-download p{margin:12px 0}

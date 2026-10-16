@@ -1,0 +1,14 @@
+{
+  "id": "boss/spiked-shell-beast",
+  "category": "boss",
+  "image": "/assets/monsters/boss/spiked-shell-beast/pose-sheet.png",
+  "width": 1536,
+  "height": 1024,
+  "format": "reference-pose-sheet",
+  "poseCount": 10,
+  "transparentBackground": true,
+  "animationReady": false,
+  "frames": null,
+  "anchor": null,
+  "gameplayDefinition": null
+}

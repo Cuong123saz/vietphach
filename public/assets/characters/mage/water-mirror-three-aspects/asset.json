@@ -1,0 +1,15 @@
+{
+  "name": "Thủy Kính Vạn Tượng",
+  "source": "source.png",
+  "frameWidth": 724,
+  "frameHeight": 724,
+  "states": {
+    "3": "charges-3.png",
+    "2": "charges-2.png",
+    "1": "charges-1.png",
+    "0": null
+  },
+  "hideWhenChargesZero": true,
+  "gameplayImplemented": true,
+  "presentationIntegrated": true
+}

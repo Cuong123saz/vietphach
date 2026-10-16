@@ -1,0 +1,31 @@
+{
+  "name": "vietphach",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "test:lab": "node --test tests/lab.cjs",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "test:archer-stage": "node --test tests/archer-stage.cjs",
+    "test:kieu-ngao": "node --test tests/kieu-ngao-stage.cjs",
+    "build:kieu-ngao": "tsc && vite build --mode kieu-ngao --outDir dist-kieu-ngao",
+    "build:archer-stage": "tsc && vite build --mode linh-moc --outDir dist-archer-stage",
+    "test": "node --test tests/lab.cjs tests/foundation.cjs tests/core.cjs tests/water-cannon.cjs tests/dragon-preview.cjs tests/water-mage.cjs tests/monsters.cjs tests/hud.cjs tests/body-hitbox.cjs tests/enemy-ai.cjs tests/enemy-threat.cjs tests/progression.cjs tests/water-long.cjs tests/water-evolution.cjs tests/khang-chien-stage.cjs tests/combat-objective.cjs tests/wood-archer.cjs tests/archer-stage.cjs tests/kieu-ngao-stage.cjs tests/mage-model.cjs tests/melee-model.cjs",
+    "apk:sync": "vite build --mode khang-chien --outDir dist-apk && node scripts/pack-apk-assets.cjs dist-apk && cap sync android",
+    "verify:archer": "node scripts/verify-wood-archer.cjs"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^8.5.2",
+    "sharp": "^0.35.5",
+    "typescript": "~6.0.2",
+    "vite": "^8.3.0"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.5.2",
+    "@capacitor/core": "^8.5.2",
+    "phaser": "3.90.0"
+  }
+}

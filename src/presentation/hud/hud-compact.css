@@ -1,0 +1,70 @@
+/* Compact combat frames: roughly half their previous dimensions, with readable text.
+   The character dialog remains the full detail view. */
+.hud-vitals { width: 232px; gap: 8px; padding: 6px 8px; border-radius: 19px 13px 15px 13px; }
+.hud-portrait-wrap { flex-basis: 44px; }
+.hud-avatar { width: 44px; height: 58px; border-width: 1px; }
+.hud-avatar img { width: 77px; left: -17px; top: -38px; }
+.combat-hud.mage-model-v2 .hud-avatar img { width: 140%; left: -20%; top: -4%; height: auto; }
+.hud-avatar kbd { right: 1px; bottom: 4px; font-size: 12px; padding: 0 3px; }
+.hud-level { left: -3px; bottom: -5px; width: 22px; height: 22px; font-size: 12px; border-width: 1px; }
+.hud-identity { gap: 4px; margin-bottom: 3px; flex-wrap: nowrap; }
+.hud-identity strong { font-size: 12px; }
+.hud-element { padding: 0 3px; font-size: 12px; }
+.hud-meter { height: 14px; margin-top: 3px; border-radius: 3px; }
+.hud-meter > span { font-size: 12px; line-height: 14px; }
+.hud-shield { margin-top: 2px; line-height: 16px; }
+.hud-progression { min-height: 26px; padding: 3px 0 0; gap: 1px 4px; }
+.hud-exp-track { height: 3px; }
+.hud-effects { top: 132px; max-width: 232px; padding: 3px 6px; }
+.enemy-focus { right: 100px; width: 175px; padding: 6px 8px; border-radius: 13px 9px 13px 9px; }
+.enemy-focus-heading { gap: 4px; }
+.enemy-focus-heading .hud-eyebrow { font-size: 12px; letter-spacing: 0; }
+.enemy-focus-heading .hud-eyebrow > span { font-size: 16px; margin-right: 2px; }
+.enemy-focus-element { padding: 0 3px; font-size: 12px; border-radius: 4px; white-space: nowrap; }
+.enemy-focus-body { gap: 6px; margin: 3px 0; }
+.enemy-focus-avatar { flex-basis: 30px; height: 30px; }
+.enemy-focus-avatar > span { font-size: 20px; }
+.enemy-focus-name { font-size: 12px; margin-bottom: 3px; line-height: 16px; }
+.enemy-focus-health { height: 16px; border-radius: 3px; }
+.enemy-focus-health span { font-size: 12px; line-height: 16px; }
+.enemy-focus-meta, .enemy-focus-status { display: inline; font-size: 12px; margin: 0; }
+.enemy-focus-status { margin-left: 6px; }
+.hud-dock { width: min(414px, calc(100% - 32px)); box-sizing: border-box; gap: 0; justify-content: space-between; padding: 14px 18px 12px; border-radius: 24px 24px 18px 18px; bottom: 14px; }
+.hud-dock::before, .hud-dock::after { top: -7px; bottom: -7px; width: 42px; }
+.hud-dock::before { left: -17px; }
+.hud-dock::after { right: -17px; }
+.hud-skill, .hud-mach { width: 56px; flex-shrink: 0; }
+.hud-mach { flex-basis: 56px; padding-right: 10px; }
+.hud-skill-art { width: 56px; height: 56px; border-radius: 8px; }
+.hud-skill-art kbd { font-size: 14px; padding: 0 4px; border-radius: 3px; }
+.hud-dock .hud-skill-name, .hud-dock .hud-cost { display: none; }
+.hud-skill-state, .hud-mach strong { font-size: 14px; min-height: 21px; line-height: 21px; margin-top: 7px; }
+.hud-skill-state { max-width: 76px; overflow: hidden; text-overflow: ellipsis; }
+.hud-skill[data-skill-state='Sẵn sàng'] .hud-skill-state { visibility: hidden; }
+.hud-mach strong { white-space: normal; }
+.hud-passive-status { font-size: 14px; line-height: 21px; white-space: normal; }
+.hud-special-frame { inset: -6px; width: calc(100% + 12px); height: calc(100% + 12px); }
+.hud-feedback { bottom: 150px; }
+@media (max-width: 440px) {
+  .hud-skill, .hud-mach { width: 48px; }
+  .hud-mach { flex-basis: 48px; padding-right: 8px; }
+  .hud-skill-art { width: 48px; height: 48px; }
+}
+@media (min-width: 581px) {
+  .hud-target-group { display: contents; }
+  .hud-target-group .enemy-focus { position: absolute; top: 16px; right: 100px; width: 175px; }
+  .hud-target-group .hud-effects { position: absolute; left: 16px; top: 132px; max-width: 232px; }
+}
+@media (max-width: 580px) {
+  .hud-vitals { width: min(232px, calc(100% - 104px)); }
+  .hud-target-group { left: 10px; top: 132px; width: min(232px, calc(100% - 20px)); gap: 6px; }
+  .hud-target-group .enemy-focus { position: static; width: 175px; max-width: 100%; }
+  .hud-target-group .hud-effects { position: static; max-width: 100%; }
+}
+
+/* Reserve both passive rows so READY and dry state never change dock geometry. */
+.hud-dock .hud-mach strong{height:21px;min-height:21px;line-height:21px;white-space:nowrap}
+.hud-dock .hud-passive-status{display:block;height:18px;min-height:18px;line-height:18px;white-space:nowrap;width:82px;font-size:12px;text-align:center}
+.hud-mach.ready .hud-passive-status{color:var(--hud-gold)}
+.hud-mach.dry .hud-passive-status{color:#ffbd9b}
+.hud-mach.dry .hud-skill-icon{filter:grayscale(1) brightness(.35)}

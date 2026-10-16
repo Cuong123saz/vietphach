@@ -1,0 +1,30 @@
+{
+  "created": "2026-10-08",
+  "tool": "Built-in image_gen.imagegen",
+  "styleReference": "public/assets/characters/archer/poses-v1.png",
+  "assets": [
+    {
+      "file": "poses.png",
+      "layout": "4 idle directions + charge / opening / Q ready / Q command",
+      "prompt": "Use case: stylized-concept. Asset type: production game character sprite atlas, real transparent RGBA background. Input image 1 is STYLE AND PROPORTION reference only: the existing painted female Wood Archer atlas. Input image 2 is IDENTITY reference only: the current male Water Mage. Redesign the MALE Water Mage so he belongs to the same visual world and has the same elegant small-head / longer-body chibi proportions, painterly 2.5D materials, soft detailed shading and refined silhouettes as the Archer. Preserve young Vietnamese male identity, warm brown hair tied in a compact high ponytail; greatly reduce the huge old hair mass. Replace the old orange martial outfit with a layered deep teal and azure Vietnamese fantasy mage tunic, ivory trousers, dark leather wrapped boots/sandals, antique gold wave embroidery, short split robe panels. A slender antique bronze staff with an unmistakable luminous cyan water-pearl in a crescent head, never a bow or quiver. Water identity comes from clothing and staff only, no surrounding spell VFX. Exactly EIGHT isolated full-body poses in a precise FOUR-column by TWO-row grid, cells equal, generous transparent padding. All eight depict ONE identical character design at equal body size, head size, clothing and staff. Row 1 left to right: idle front/down facing viewer; idle RIGHT profile; idle BACK/up facing away; idle LEFT profile. Row 2 left to right: charge RIGHT with staff forward at chest height and open grounded stance; cast-opening RIGHT with staff raised diagonally overhead; Q-ready RIGHT with staff drawn back and free hand forward; Q-command RIGHT lunging and pointing staff forward at chest height. Every figure has visible complete feet and entire staff contained inside its own cell. Vertical ground baseline and body center must be consistent per row. Orthographic game sprite camera, same mildly elevated angle as Archer. Clean painterly edges, readable at 74px in game. Do not copy the female archer character. No text, labels, gridlines, scenery, background haze, ground shadows, particles, water dragon, checkerboard illustration or opaque backdrop. Actual transparency outside every character."
+    },
+    {
+      "file": "run.png",
+      "layout": "4 rows: right / down / up / left, 4 phases each",
+      "prompt": "Use case: stylized-concept. Production 2.5D action RPG sprite atlas with real transparent RGBA background. Input image 1 is the EXACT character identity, costume, proportions, staff and painterly rendering to keep. Input image 2 is supporting style reference: the existing Wood Archer. Make SIXTEEN isolated running sprites of the SAME male Water Mage from image 1 in a precise FOUR-column by FOUR-row uniform grid. ONE full-body sprite in each cell, ample transparent margins; no pose crosses a cell boundary. Row 1: running RIGHT, four distinct successive locomotion phases (left leg extending, passing, right leg extending, airborne/recoil). Row 2: running DOWN toward viewer, the same four distinct locomotion phases. Row 3: running UP away from viewer, same four phases, back of head and robe visible, no face. Row 4: running LEFT, four distinct phases. Keep body/head size identical across all cells and directions, consistent camera and ground baseline. Exact same compact dark brown ponytail, turquoise hair ribbon and small antique gold cyan ornament, deep teal/azure embroidered split mage robe and shoulder mantle, ivory baggy trousers, leather bracers and open leather boots/sandals, antique bronze slender staff with cyan water-pearl in crescent head. Staff remains held low and forward while running, never a bow/quiver. Elegant small-head longer-body chibi ratio exactly like the input atlas, painterly hand-painted materials, clean readable silhouettes, mild overhead orthographic game camera. Full feet, robe, ponytail and staff complete inside each cell. No text, grid lines, labels, backdrop, checkerboard pattern, ground plane or shadows, spell effects, glowing haze or extra floating objects. The entire area outside each character must be truly transparent. Prefer a square 2048 by 2048 atlas with evenly sized cells."
+    }
+  ],
+  "runtime": {
+    "extraction": "Owned alpha silhouettes; whole figures may cross nominal cells. Original generated PNGs preserved.",
+    "standingHeight": 74,
+    "runCycleHeight": 66,
+    "canvas": [
+      128,
+      96
+    ],
+    "groundAnchor": [
+      64,
+      88
+    ]
+  }
+}

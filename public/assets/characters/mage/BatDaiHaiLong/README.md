@@ -1,0 +1,1 @@
+Tài nguyên do người thiết kế cung cấp. formation.png giữ nguyên ảnh gốc 4 tư thế tụ. Presentation chia thành 4 frame, hòa sáng ADD để nền đen không che map. Cảnh Stage: tụ từ giây 7,5 đến 9,7; phóng 8 rồng dùng hoạt ảnh Q đến mục tiêu đã khóa trong 0,9s; damage xác nhận giây 10,6; kết thúc giây 12. Raw damage 500.000 giữ tuning cinematic hiện tại, không mở skill Lv15 toàn game.

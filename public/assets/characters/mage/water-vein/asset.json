@@ -1,0 +1,13 @@
+{
+  "name": "Thủy Mạch",
+  "source": "source.png",
+  "current": "active-link-transparent.png",
+  "originalCut": "active-link.png",
+  "reserved": "future-link.png",
+  "placement": "ground-between-water-guards",
+  "transparentBackground": true,
+  "sourceTransparentBackground": false,
+  "requiresBackgroundRemoval": false,
+  "gameplayImplemented": true,
+  "presentationIntegrated": true
+}
